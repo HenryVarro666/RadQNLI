@@ -51,4 +51,6 @@ def convert_to_qnli(radqa_file, qnli_file):
                 index += 1
 
 if __name__ == '__main__':
-    convert_to_qnli('../raw_RadQA/test.json', 'radqa_test.tsv')
+    # convert_to_qnli('../raw_RadQA/test.json', 'radqa_test.tsv')
+    # convert_to_qnli('../raw_RadQA/train.json', 'radqa_train.tsv')
+    convert_to_qnli('../raw_RadQA/dev.json', 'radqa_dev.tsv')
