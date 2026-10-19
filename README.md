@@ -3,6 +3,21 @@ Different codes for RadQNLI
 
 
 # Results
+
+<!-- problem-framing:start -->
+
+## Problem and evidence
+
+> **Does a question-inference model retain its ability to distinguish answer-supporting radiology text when negative examples are made harder without changing evaluation prevalence?**
+
+**Why it matters:** A model can appear stronger because its test set contains easier negatives or a different class balance. Reliable comparison requires separating reasoning difficulty from sampling effects.
+
+**Central tension:** Lexically similar negatives may test useful distinctions, but changing their selection can also alter topic, prevalence and annotation ambiguity.
+
+[Full problem and verification plan](PROBLEM.md)
+
+<!-- problem-framing:end -->
+
 ## Random Sample
 
 ||radqa_test_rand_00 (Random: 460+1681)|radqa_test_rand_01 (Random: 460+1327)|radqa_test_rand_02(Random: 460+517)|radqa_test_rand_03(Random: 460+193)|
