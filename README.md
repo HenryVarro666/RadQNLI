@@ -56,6 +56,42 @@ Recall stays between 0.5234 and 0.5321 in all twelve cells; precision rises with
 
 **In-context examples.** The three demonstrations in the prompt are question–sentence pairs from reports in the RadQA *test* split, and they are also items of the test sets: three per set, except two in `test_03` and in the `Random_sample1/` sets. That is at most 3 of 653 items (0.5%). Their text is replaced by placeholders in the notebooks.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    RQ["RadQA JSON<br/>train · dev · test"]
+
+    subgraph BUILD["Build (Preprocessing/)"]
+        direction TB
+        PAIR["radqa2qnli.py<br/>question × sentence"]
+        CLEAN["build_radqnli.py<br/>drop header fragments"]
+        RG["ROUGE-1<br/>question vs sentence"]
+        PAIR --> CLEAN --> RG
+    end
+
+    DS["RadQNLI<br/>7,911 / 950 / 977 pairs"]
+    TS["R1/<br/>4 test sets"]
+    RS["Random_sample1/ · 2/<br/>random negatives"]
+
+    subgraph RUN["ChatGPT runs (notebooks)"]
+        direction TB
+        GPT["ChatGPT_Test*.ipynb<br/>gpt-3.5-turbo, 3-shot"]
+        OUT["CSV + predict<br/>5 runs per set"]
+        EV["Evaluation_*.ipynb<br/>ACC · P · R · F1"]
+        GPT --> OUT --> EV
+    end
+
+    RQ --> BUILD
+    BUILD -->|"negatives ≥ 0.2"| DS
+    BUILD -->|"test: > 0 … ≥ 0.3"| TS
+    TS -->|"same counts"| RS
+    TS --> RUN
+    RS --> RUN
+```
+
+Read left to right: the two scripts turn RadQA into labelled question–sentence pairs and score every negative pair by its word overlap with the question; one threshold gives the RadQNLI splits, four give the test sets, and the random controls copy their negative counts. Only the test sets go through the ChatGPT notebooks; the paper's GPT-4, open-LLM and BERT fine-tuning runs are not part of this code.
+
 ## How it works
 
 | Step | What happens | Code |
