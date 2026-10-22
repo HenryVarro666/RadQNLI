@@ -1,1 +1,28 @@
 .DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# RadQA comes from PhysioNet under a credentialed data use agreement (it is derived from
+# MIMIC-III). RadQA itself, every RadQNLI file built from it and every model output on it
+# contain report text: keep all of them out of git.
+raw_RadQA/
+*.zip
+data/
+Preprocessing/QNLI_radqa/
+Preprocessing/raw_radqa/
+*.tsv
+*.csv
+*.json
+Output/
+output/
+
+# tracked on purpose: the synthetic example and the metrics-only results
+!examples/radqa/test.json
+!examples/expected/*.tsv
+!examples/expected/*.csv
+!examples/expected/R1/*.csv
+!results/*.csv
+examples/out/

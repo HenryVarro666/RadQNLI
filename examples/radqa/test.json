@@ -1,0 +1,154 @@
+{
+ "note": "SYNTHETIC. Two invented radiology reports in the RadQA 1.0.0 JSON layout (SQuAD 2.0 style). They are not from MIMIC-III or RadQA and describe no real patient.",
+ "version": "synthetic",
+ "data": [
+  {
+   "paragraphs": [
+    {
+     "qas": [
+      {
+       "question": "Is there an opacity in the left lung?",
+       "id": "synthetic-01_1_1_I",
+       "answers": [
+        {
+         "answer_id": "synthetic-01_1_1_I_a",
+         "text": "Small left mid lung opacity in this invented case, possibly an early infection.",
+         "answer_start": 63
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Does the heart look enlarged?",
+       "id": "synthetic-01_2_1_I",
+       "answers": [],
+       "is_impossible": true
+      },
+      {
+       "question": "Has the feeding tube moved since the last film?",
+       "id": "synthetic-01_3_1_I",
+       "answers": [],
+       "is_impossible": true
+      }
+     ],
+     "context": "SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY. IMPRESSION: 1. Small left mid lung opacity in this invented case, possibly an early infection. 2. A follow-up film in two weeks would settle it.",
+     "document_id": "synthetic-01_I"
+    },
+    {
+     "qas": [
+      {
+       "question": "Is there an opacity in the left lung?",
+       "id": "synthetic-01_1_1_O",
+       "answers": [
+        {
+         "answer_id": "synthetic-01_1_1_O_a",
+         "text": "A small rounded opacity projects over the middle of the left lung.",
+         "answer_start": 138
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Does the heart look enlarged?",
+       "id": "synthetic-01_2_1_O",
+       "answers": [
+        {
+         "answer_id": "synthetic-01_2_1_O_a",
+         "text": "The heart outline stays within expected limits for this made-up case.",
+         "answer_start": 233
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Has the feeding tube moved since the last film?",
+       "id": "synthetic-01_3_1_O",
+       "answers": [],
+       "is_impossible": true
+      }
+     ],
+     "context": "SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY. EXAMINATION: Chest radiograph, two views. HISTORY: Invented hiker with a cough. FINDINGS: A small rounded opacity projects over the middle of the left lung. The right lung looks clear. The heart outline stays within expected limits for this made-up case.",
+     "document_id": "synthetic-01_O"
+    }
+   ],
+   "title": "synthetic-01"
+  },
+  {
+   "paragraphs": [
+    {
+     "qas": [
+      {
+       "question": "Are there gallstones?",
+       "id": "synthetic-02_1_1_I",
+       "answers": [
+        {
+         "answer_id": "synthetic-02_1_1_I_a",
+         "text": "Gallstones without signs of inflammation in this invented example.",
+         "answer_start": 60
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Is the bile duct dilated?",
+       "id": "synthetic-02_2_1_I",
+       "answers": [
+        {
+         "answer_id": "synthetic-02_2_1_I_a",
+         "text": "The bile duct keeps a normal calibre.",
+         "answer_start": 127
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Is there fluid around the right kidney?",
+       "id": "synthetic-02_3_1_I",
+       "answers": [],
+       "is_impossible": true
+      }
+     ],
+     "context": "SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY. IMPRESSION: Gallstones without signs of inflammation in this invented example. The bile duct keeps a normal calibre.",
+     "document_id": "synthetic-02_I"
+    },
+    {
+     "qas": [
+      {
+       "question": "Are there gallstones?",
+       "id": "synthetic-02_1_1_O",
+       "answers": [
+        {
+         "answer_id": "synthetic-02_1_1_O_a",
+         "text": "Several mobile bright stones sit in the gallbladder, and its wall is thin.",
+         "answer_start": 165
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Is the bile duct dilated?",
+       "id": "synthetic-02_2_1_O",
+       "answers": [
+        {
+         "answer_id": "synthetic-02_2_1_O_a",
+         "text": "The bile duct is 4 mm wide on this invented scan.",
+         "answer_start": 240
+        }
+       ],
+       "is_impossible": false
+      },
+      {
+       "question": "Is there fluid around the right kidney?",
+       "id": "synthetic-02_3_1_O",
+       "answers": [],
+       "is_impossible": true
+      }
+     ],
+     "context": "SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY. EXAMINATION: Ultrasound of the right upper abdomen. HISTORY: Made-up patient with pain after a large meal. FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin. The bile duct is 4 mm wide on this invented scan. The liver texture is even throughout.",
+     "document_id": "synthetic-02_O"
+    }
+   ],
+   "title": "synthetic-02"
+  }
+ ]
+}

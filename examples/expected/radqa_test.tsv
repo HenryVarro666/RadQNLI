@@ -1,0 +1,61 @@
+index	question	sentence	label
+0	Is there an opacity in the left lung?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+1	Is there an opacity in the left lung?	IMPRESSION: 1.	not_entailment
+2	Is there an opacity in the left lung?	Small left mid lung opacity in this invented case, possibly an early infection.	entailment
+3	Is there an opacity in the left lung?	2.	not_entailment
+4	Is there an opacity in the left lung?	A follow-up film in two weeks would settle it.	not_entailment
+5	Does the heart look enlarged?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+6	Does the heart look enlarged?	IMPRESSION: 1.	not_entailment
+7	Does the heart look enlarged?	Small left mid lung opacity in this invented case, possibly an early infection.	not_entailment
+8	Does the heart look enlarged?	2.	not_entailment
+9	Does the heart look enlarged?	A follow-up film in two weeks would settle it.	not_entailment
+10	Has the feeding tube moved since the last film?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+11	Has the feeding tube moved since the last film?	IMPRESSION: 1.	not_entailment
+12	Has the feeding tube moved since the last film?	Small left mid lung opacity in this invented case, possibly an early infection.	not_entailment
+13	Has the feeding tube moved since the last film?	2.	not_entailment
+14	Has the feeding tube moved since the last film?	A follow-up film in two weeks would settle it.	not_entailment
+16	Is there an opacity in the left lung?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+17	Is there an opacity in the left lung?	EXAMINATION: Chest radiograph, two views.	not_entailment
+18	Is there an opacity in the left lung?	HISTORY: Invented hiker with a cough.	not_entailment
+19	Is there an opacity in the left lung?	FINDINGS: A small rounded opacity projects over the middle of the left lung.	entailment
+20	Is there an opacity in the left lung?	The right lung looks clear.	not_entailment
+21	Is there an opacity in the left lung?	The heart outline stays within expected limits for this made-up case.	not_entailment
+22	Does the heart look enlarged?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+23	Does the heart look enlarged?	EXAMINATION: Chest radiograph, two views.	not_entailment
+24	Does the heart look enlarged?	HISTORY: Invented hiker with a cough.	not_entailment
+25	Does the heart look enlarged?	FINDINGS: A small rounded opacity projects over the middle of the left lung.	not_entailment
+26	Does the heart look enlarged?	The right lung looks clear.	not_entailment
+27	Does the heart look enlarged?	The heart outline stays within expected limits for this made-up case.	entailment
+28	Has the feeding tube moved since the last film?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+29	Has the feeding tube moved since the last film?	EXAMINATION: Chest radiograph, two views.	not_entailment
+30	Has the feeding tube moved since the last film?	HISTORY: Invented hiker with a cough.	not_entailment
+31	Has the feeding tube moved since the last film?	FINDINGS: A small rounded opacity projects over the middle of the left lung.	not_entailment
+32	Has the feeding tube moved since the last film?	The right lung looks clear.	not_entailment
+33	Has the feeding tube moved since the last film?	The heart outline stays within expected limits for this made-up case.	not_entailment
+35	Are there gallstones?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+36	Are there gallstones?	IMPRESSION: Gallstones without signs of inflammation in this invented example.	entailment
+37	Are there gallstones?	The bile duct keeps a normal calibre.	not_entailment
+38	Is the bile duct dilated?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+39	Is the bile duct dilated?	IMPRESSION: Gallstones without signs of inflammation in this invented example.	not_entailment
+40	Is the bile duct dilated?	The bile duct keeps a normal calibre.	entailment
+41	Is there fluid around the right kidney?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+42	Is there fluid around the right kidney?	IMPRESSION: Gallstones without signs of inflammation in this invented example.	not_entailment
+43	Is there fluid around the right kidney?	The bile duct keeps a normal calibre.	not_entailment
+45	Are there gallstones?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+46	Are there gallstones?	EXAMINATION: Ultrasound of the right upper abdomen.	not_entailment
+47	Are there gallstones?	HISTORY: Made-up patient with pain after a large meal.	not_entailment
+48	Are there gallstones?	FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin.	entailment
+49	Are there gallstones?	The bile duct is 4 mm wide on this invented scan.	not_entailment
+50	Are there gallstones?	The liver texture is even throughout.	not_entailment
+51	Is the bile duct dilated?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+52	Is the bile duct dilated?	EXAMINATION: Ultrasound of the right upper abdomen.	not_entailment
+53	Is the bile duct dilated?	HISTORY: Made-up patient with pain after a large meal.	not_entailment
+54	Is the bile duct dilated?	FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin.	not_entailment
+55	Is the bile duct dilated?	The bile duct is 4 mm wide on this invented scan.	entailment
+56	Is the bile duct dilated?	The liver texture is even throughout.	not_entailment
+57	Is there fluid around the right kidney?	SYNTHETIC REPORT, INVENTED FOR THIS REPOSITORY.	not_entailment
+58	Is there fluid around the right kidney?	EXAMINATION: Ultrasound of the right upper abdomen.	not_entailment
+59	Is there fluid around the right kidney?	HISTORY: Made-up patient with pain after a large meal.	not_entailment
+60	Is there fluid around the right kidney?	FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin.	not_entailment
+61	Is there fluid around the right kidney?	The bile duct is 4 mm wide on this invented scan.	not_entailment
+62	Is there fluid around the right kidney?	The liver texture is even throughout.	not_entailment

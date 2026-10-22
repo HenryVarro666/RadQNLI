@@ -51,6 +51,16 @@ def convert_to_qnli(radqa_file, qnli_file):
                 index += 1
 
 if __name__ == '__main__':
-    # convert_to_qnli('../raw_RadQA/test.json', 'radqa_test.tsv')
-    # convert_to_qnli('../raw_RadQA/train.json', 'radqa_train.tsv')
-    convert_to_qnli('../raw_RadQA/dev.json', 'radqa_dev.tsv')
+    # RadQA {split}.json -> radqa_{split}.tsv (index, question, sentence, label) for each split.
+    # The defaults reproduce the 2023 layout: raw_RadQA/ at the repository root, output here.
+    import argparse
+    ap = argparse.ArgumentParser(description='Convert RadQA (SQuAD-style JSON) to QNLI-style sentence pairs.')
+    ap.add_argument('--radqa-dir', default='../raw_RadQA', help='folder with train.json, dev.json, test.json')
+    ap.add_argument('--out-dir', default='.', help='where radqa_{split}.tsv is written')
+    ap.add_argument('--splits', nargs='+', default=['train', 'dev', 'test'])
+    args = ap.parse_args()
+    os.makedirs(args.out_dir, exist_ok=True)
+    for split in args.splits:
+        convert_to_qnli(os.path.join(args.radqa_dir, f'{split}.json'),
+                        os.path.join(args.out_dir, f'radqa_{split}.tsv'))
+        print('wrote', os.path.join(args.out_dir, f'radqa_{split}.tsv'))

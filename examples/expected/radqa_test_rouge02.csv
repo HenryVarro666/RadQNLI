@@ -1,0 +1,15 @@
+question,sentence,label
+Is the bile duct dilated?,"FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin.",not_entailment
+Is there fluid around the right kidney?,EXAMINATION: Ultrasound of the right upper abdomen.,not_entailment
+Is there an opacity in the left lung?,"Small left mid lung opacity in this invented case, possibly an early infection.",entailment
+Is there fluid around the right kidney?,The bile duct is 4 mm wide on this invented scan.,not_entailment
+Are there gallstones?,"FINDINGS: Several mobile bright stones sit in the gallbladder, and its wall is thin.",entailment
+Does the heart look enlarged?,The right lung looks clear.,not_entailment
+Does the heart look enlarged?,The heart outline stays within expected limits for this made-up case.,entailment
+Is there an opacity in the left lung?,FINDINGS: A small rounded opacity projects over the middle of the left lung.,entailment
+Is there fluid around the right kidney?,The liver texture is even throughout.,not_entailment
+Is the bile duct dilated?,The bile duct keeps a normal calibre.,entailment
+Is there an opacity in the left lung?,The right lung looks clear.,not_entailment
+Is the bile duct dilated?,The liver texture is even throughout.,not_entailment
+Are there gallstones?,IMPRESSION: Gallstones without signs of inflammation in this invented example.,entailment
+Is the bile duct dilated?,The bile duct is 4 mm wide on this invented scan.,entailment

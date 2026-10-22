@@ -1,0 +1,9 @@
+# Building RadQNLI (Preprocessing/)
+pandas
+nltk            # sentence splitting; then: python3 -m nltk.downloader punkt_tab
+rouge_score     # ROUGE-1 between question and sentence
+
+# The 2023 Colab notebooks (R1/, Random_sample1/) also need
+# openai<1.0      # they call openai.ChatCompletion and openai.error
+# evaluate        # accuracy / precision / recall / F1
+# tqdm
